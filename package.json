@@ -1,0 +1,17 @@
+{
+  "name": "aerolex",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Aerolex Advisors — React + Vite website, Express API, MySQL database and Admin Panel",
+  "scripts": {
+    "install:all": "npm install --prefix server && npm install --prefix client",
+    "build": "npm install --prefix server && npm install --include=dev --prefix client && npm run build --prefix client",
+    "start": "npm start --prefix server",
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "db:reset": "npm run db:reset --prefix server"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
